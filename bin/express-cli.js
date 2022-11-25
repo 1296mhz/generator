@@ -1,23 +1,23 @@
 #!/usr/bin/env node
 
-var ejs = require('ejs')
-var fs = require('fs')
-var minimatch = require('minimatch')
-var mkdirp = require('mkdirp')
-var parseArgs = require('minimist')
-var path = require('path')
-var readline = require('readline')
-var sortedObject = require('sorted-object')
-var util = require('util')
+const ejs = require('ejs')
+const fs = require('fs')
+const minimatch = require('minimatch')
+const mkdirp = require('mkdirp')
+const parseArgs = require('minimist')
+const path = require('path')
+const readline = require('readline')
+const sortedObject = require('sorted-object')
+const util = require('util')
 
-var MODE_0666 = parseInt('0666', 8)
-var MODE_0755 = parseInt('0755', 8)
-var TEMPLATE_DIR = path.join(__dirname, '..', 'templates')
-var VERSION = require('../package').version
+const MODE_0666 = parseInt('0666', 8)
+const MODE_0755 = parseInt('0755', 8)
+const TEMPLATE_DIR = path.join(__dirname, '..', 'templates')
+const VERSION = require('../package').version
 
 // parse args
-var unknown = []
-var args = parseArgs(process.argv.slice(2), {
+const unknown = []
+const args = parseArgs(process.argv.slice(2), {
   alias: {
     c: 'css',
     e: 'ejs',
