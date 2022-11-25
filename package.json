@@ -1,7 +1,7 @@
 {
   "name": "@cshlovjah/express-generator-v2",
   "description": "Express' application generator v2",
-  "version": "4.16.1",
+  "version": "1",
   "author": "TJ Holowaychuk <tj@vision-media.ca>",
   "contributors": [
     "Dmitry Zyryanov <r8cdf@yandex.ru>"
