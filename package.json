@@ -1,10 +1,10 @@
 {
   "name": "express-generator-ng",
-  "version": "1.0.2",
+  "version": "0.0.0",
   "description": "Expressjs app generator",
   "main": "bin/express-cli.js",
   "bin": {
-    "express-generator-ng": "bin/express-cli.js"
+    "expressng": "./bin/express-cli.js"
   },
   "directories": {
     "test": "test"
