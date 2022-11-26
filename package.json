@@ -1,10 +1,17 @@
 {
   "name": "express-generator-new-gen",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Expressjs app generator",
   "main": "bin/express-cli.js",
   "bin": {
     "expressng": "./bin/express-cli.js"
+  },
+  "dependencies": {
+    "ejs": "2.6.2",
+    "minimatch": "3.0.4",
+    "minimist": "1.2.5",
+    "mkdirp": "0.5.1",
+    "sorted-object": "2.0.1"
   },
   "devDependencies": {
     "eslint": "7.32.0",
