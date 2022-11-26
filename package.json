@@ -1,16 +1,40 @@
 {
-  "name": "express-generator-ng",
+  "name": "express-generator-new-gen",
   "version": "0.0.0",
   "description": "Expressjs app generator",
   "main": "bin/express-cli.js",
   "bin": {
     "expressng": "./bin/express-cli.js"
   },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "5.2.0",
+    "eslint-plugin-standard": "4.1.0",
+    "mocha": "9.1.3",
+    "rimraf": "3.0.2",
+    "supertest": "6.1.4",
+    "tree-kill": "1.2.2",
+    "uid-safe": "2.1.5",
+    "validate-npm-package-name": "3.0.0"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "files": [
+    "LICENSE",
+    "bin/",
+    "templates/"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci": "mocha --reporter spec --check-leaks test/"
+  },
   "directories": {
     "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
